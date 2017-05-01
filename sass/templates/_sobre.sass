@@ -1,0 +1,29 @@
+@import molecules/textos
+@import organisms/habilidades
+header
+    +clearfix
+    min-height: 375px
+    position: relative
+
+    background: 
+        image: url('../images/painel1.jpg')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        size: cover
+
+    h1
+        clear: both
+        margin: 120px auto 30px 
+        font-weight: $light
+        border: 3px solid $branco
+        padding: 20px
+        display: table
+        +breakpoint($celular)
+            +font-size(40px)
+
+.botao
+    display: table
+    margin: 0 auto
+    clear: both
