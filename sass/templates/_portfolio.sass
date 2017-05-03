@@ -1,0 +1,71 @@
+header
+    +clearfix
+    min-height: 375px
+    position: relative
+
+    background: 
+        image: url('../images/bgmulher.jpg')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        size: cover
+
+    h1
+        clear: both
+        margin: 120px auto 30px 
+        font-weight: $light
+        border: 3px solid $branco
+        padding: 20px
+        display: table
+        +breakpoint($celular)
+            +font-size(40px)
+.portfolio
+    padding: 30px 0
+
+    ul
+        +clearfix
+        +make-row
+        li
+            +make-sm-column(3)
+            +make-xs-column(6)
+            overflow: hidden
+            figure
+                position: relative
+                &:hover
+                    a
+                        +opacity(1)
+                    .overlay
+                        top: 0
+                img
+                    +img-responsive
+                figcaption
+                    a
+                        text-align: center
+                        text-transform: uppercase
+                        position: absolute
+                        z-index: 2
+                        color: $branco
+                        width: 100%
+                        top: 40%
+                        +opacity(0)
+
+                        h3
+                            +font-size(22px)
+                            margin: 0
+                        p
+                            +font-size(18px)
+                    a,
+                    .overlay
+                        +transition(.3s)
+
+                    .overlay
+                        +gradient(60deg, $verde, $azul)
+                        +opacity(.6)
+                        position: absolute
+                        left: 0
+                        top: 100%
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
