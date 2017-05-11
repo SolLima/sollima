@@ -1,0 +1,70 @@
+header
+    +clearfix
+    min-height: 375px
+    position: relative
+
+    background: 
+        image: url('../images/bgcontato.jpg')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        size: 100% 
+
+    h1
+        clear: both
+        margin: 120px auto 30px 
+        font-weight: $light
+        border: 3px solid $branco
+        padding: 20px
+        display: table
+        +breakpoint($celular)
+            +font-size(40px)
+.contato
+    padding: 30px 0
+    form
+        +clearfix
+        +make-sm-column(8)
+        +make-sm-column-offset(2)
+        .cols
+            +make-row
+        .col
+            +make-sm-column(6)
+    input,
+    select,
+    textarea
+        width: 100%
+        border: 2px solid $cinza-claro
+        padding: 7px
+        text-transform: uppercase
+        +transition(.5s)
+        &:hover
+            border-color: $azul
+        &:focus
+            border-color: $verde
+    
+    button
+        background: transparent
+        display: table
+        margin: 0 auto
+    
+    .bg-success,
+    .bg-danger
+        padding: 7px
+
+    .meios
+        +clearfix
+        ul
+            .tel-cont
+                +make-sm-column(6)
+                +font-size(40px)
+                font-style: italic
+                color: $verde
+            .mail-cont
+                +make-sm-column(6)
+                +font-size(40px)
+                font-style: italic
+                color: $azul
+
+
+    
