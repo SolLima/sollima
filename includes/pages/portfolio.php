@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/geral.css">
-    <link rel="stylesheet" href="css/plugins.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo1.png" alt="">
-                </a>
-            </div>
-            <div class="links">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa  fa-github-alt"></i></a></li>
-                </ul>
-            </div>
-            <h1>Meus <strong>Trabalhos</strong></h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </header>
-    <main>
-        <section class="portfolio">
+ <section class="portfolio">
             <div class="container">
                 <ul>
                     <li>
@@ -139,17 +100,3 @@
                 </ul>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="logo-rodape">
-                <a href="index.html">
-                    <img src="images/logo1.png" alt="">
-                </a>
-                <p>2017 - Todos os direitos reservados</p>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
